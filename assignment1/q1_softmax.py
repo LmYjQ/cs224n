@@ -31,7 +31,8 @@ def softmax(x):
     if len(x.shape) > 1:
         # Matrix
         ### YOUR CODE HERE
-        raise NotImplementedError
+        _m = a.max(axis=1)
+        b = a - _m.reshape((3,1))
         ### END YOUR CODE
     else:
         # Vector
